@@ -1,0 +1,22 @@
+/* CSS DOCUMENT */
+@charset "UTF-8";
+
+@font-face {
+    font-family: ;
+    src: url();
+    font-weight: ;
+    font-style: ;
+}
+
+body {
+    background-color: #EE5A24;
+}
+
+h1 {
+    text-align: center;
+    font-size: 7rem;
+}
+
+nav {
+    text-align: end;
+}
