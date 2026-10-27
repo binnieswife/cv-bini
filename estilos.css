@@ -2,96 +2,157 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: "CD Regular";
-    src: url(fuentes/ClashDisplay-Regular.otf) format(.otf);
+    font-family: "Morally serif";
+    src: url(fuentes/Morally\ Serif.otf) format("opentype");
     font-weight: normal;
     font-style: normal;
 }
 
-font body {
-    background-color: #ffffff;
+@font-face {
+    font-family: "Barlow Condensed";
+    src: url(fuentes/BarlowCondensed-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(fuentes/OpenSans-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url(fuentes/OpenSans-SemiBold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Italic";
+    src: url(fuentes/OpenSans-Italic.ttf) format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: #FDD4E8;
 }
 
 main {
-    background-color: #ff97fd;
-}
-
-.parteuno {
-    height: 100vh;
-    width: 100%;
-    padding: 18px 18px;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 100px;
-}
-
-.partedos {
-    height: 100vh;
-    width: 100%;
-    padding: 18px 18px;
-    background-color: #dddddd;
-    box-sizing: border-box;
-
-}
-
-
-h1 {
-    text-align: left;
-    font-size: 2rem;
-    font-family: "CD Regular", sans-serif;
-}
-
-
-nav {
-    text-align: end;
-}
-
-.contenedor-imagen {
-    width: 252px;
-    height: 444px;
-    overflow: hidden;
-    border-radius: 50%;
+    background-color: #FDD4E8;
+    flex: 1;
     position: relative;
-}
-
-.contenedor-imagen img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: #83d2ff;
-}
-
-.texto-ovalado {
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 50%;
-    background-color: #3498db;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: center;
-    transform: rotate(-8deg);
-    position: absolute;
-    top: -39px;
-    left: -31px
-}
-
-.tarjeta {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    border: 1px solid #333333;
-    border-radius: 12px;
-    background-color: #f9f9f9;
-    max-width: 300px;
-    margin: 20px auto;
-    position: relative;
-    padding: 40px 20px 20px 20px;
-    margin: 50px auto;
+    padding: 50px;
+}
+
+header {
+    background-color: #6A5248;
+    padding: 13px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+nav a {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FDD4E8;
+    border: 2px solid #FDD4E8;
+    border-radius: 50px;
+    padding: 8px 22px;
+    display: inline-block;
+
 
 }
 
+
+.pie-pagina {
+    min-height: 47px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 30px 50px;
+    box-sizing: border-box;
+
+}
+
+.pie-pagina p {
+    font-family: 'Open Sans', sans-serif;
+    color: #6A5248;
+    font-size: 11px;
+    line-height: 0.9;
+}
+
+.datos-contacto {
+    text-align: right;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 160px;
+    margin-bottom: 4px;
+    color: #5c443c;
+    font-family: 'Morally serif', sans-serif;
+    margin-bottom: -33px;
+    margin: -35px;
+}
+
+.hero .subtitulo {
+    margin-top: 0;
+    color: #70544c;
+    font-size: 2.3rem;
+}
+
+.img-sticker-uno {
+
+    position: absolute;
+    top: 0%;
+    left: 19%;
+    width: 230px;
+    height: auto;
+
+}
+
+.img-sticker-dos {
+
+    position: absolute;
+    bottom: 7%;
+    right: 24%;
+    width: 150px;
+    height: auto;
+
+}
